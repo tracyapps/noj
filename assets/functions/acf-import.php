@@ -12,9 +12,8 @@ $background_choices_available = array (
 
 $color_theme_list = array (
 	'default' 		=> 'Default',
-	'retrorocket' 	=> 'Retro Rocket',
 	'spice-late'	=> 'Spice Late',
-	'youthful'		=> 'Youthful',
+	'spice-late-dark'	=> 'Spice Late - Dark',
 );
 
 $typography_theme_list = array (

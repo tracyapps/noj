@@ -1,7 +1,10 @@
 <?php
 
 // Adds support for editor color palette.
-if( 'spice-late' == get_field( 'color_theme', 'option') ) :
+
+// SPICE LATE / SPICE LATE DARK
+if( 'spice-late' == get_field( 'color_theme', 'option') ||
+	'spice-late-dark' == get_field( 'color_theme', 'option')) :
 	add_theme_support( 'editor-color-palette', array(
 
 		array(

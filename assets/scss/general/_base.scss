@@ -21,6 +21,8 @@ body {
 	margin: 0;
 	font-family: var(--typography-body_text);
 	-webkit-tap-highlight-color: #ff0;
+	background-color: var(--body--background_color);
+	color: var(--body--text_color);
 
 	@include phone-only {
 		font-size: calc( var(--typography-body_text) * .9 );
@@ -45,13 +47,13 @@ body {
 }
 
 a {
-	color: var(--text_link_color);
+	color: var(--body--link_color);
 	transition: all $button-transition-speed ease-in-out;
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: var(--text_link_hover_color);
+		color: var(--body--link_color_hover);
 	}
 }
 
@@ -94,27 +96,13 @@ blockquote {
 a.button,
 input[type="submit"],
 button {
-	background: var(--button_background_color);
-	padding: 0.5em 1.25em;
-	text-align: center;
-	text-decoration: none;
-	color: var(--button_text_color) !important;
-	display: inline-block;
+
 	transition: all $button-transition-speed ease-in-out;
-	border-radius: var(--border_radius);
-	font-weight: bold;
-	outline: none;
-	box-shadow: none;
-	-webkit-appearance: none;
-	border-width: 1px;
-	border-color: transparent;
 
 	&:hover,
 	&:focus,
 	&:visited:hover {
-		background: var(--button_hover_background_color);
-		color: var(--button_hover_text_color) !important;
-		box-shadow: 0 0 6px var(--button_hover_background_color);
+
 	}
 
 
@@ -127,18 +115,12 @@ button {
 
 	&.text_link {
 		background: none;
-		color: var(--text_link_color) !important;
-		text-decoration: underline;
-		padding: 0;
-		margin: 0;
-		font-weight: normal;
+
 
 		&:hover,
 		&:focus,
 		&:active {
-			color: var(--text_link_hover_color) !important;
-			background: none;
-			box-shadow: none;
+
 		}
 	}
 
