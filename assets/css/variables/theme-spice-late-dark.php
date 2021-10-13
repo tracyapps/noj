@@ -1,17 +1,15 @@
 <?php
 /**
- * CSS variable import: default theme
+ * CSS variable import: spice late dark theme
  *
  */ ?>
 
 <style rel="stylesheet" type="text/css">
 	:root {
-
 		--body--background_color:	#312b28;
 		--body--text_color:			#fff;
 		--body--link_color: #F4A460;
 		--body--link_color_hover: #8B7355;
-
 
 		--header--background_color:		rgba(205, 201, 165, 0.24);
 		--header--text_color:		#F2F2F2;

@@ -1,17 +1,15 @@
 <?php
 /**
- * CSS variable import: default theme
+ * CSS variable import: spice late theme
  *
  */ ?>
 
 <style rel="stylesheet" type="text/css">
 	:root {
-
 		--body--background_color:	#F2F2F2;
 		--body--text_color:			#312b28;
 		--body--link_color: #5c1f2b;
 		--body--link_color_hover: #312b28;
-
 
 		--header_expanded--background_color:		rgba(205, 201, 165, 0.24);
 		--header_expanded--text_color:		#8B7355;
@@ -34,45 +32,4 @@
 		--footer--link_color_hover:		#312b28;
 	}
 
-	.has-dark-brown-color {
-		color: #312b28;
-	}
-	.has-dark-brown-background-color {
-		background-color: #312b28;
-	}
-
-	.has-light-brown-color {
-		color: #8B7355;
-	}
-	.has-light-brown-background-color {
-		background-color: #8B7355;
-	}
-
-	.has-peach-color {
-		color: #F4A460;
-	}
-	.has-peach-background-color {
-		background-color: #F4A460;
-	}
-
-	.has-beige-color {
-		color: #CDC9A5;
-	}
-	.has-beige-background-color {
-		background-color: #CDC9A5;
-	}
-
-	.has-cream-color {
-		color: #FFE7BA;
-	}
-	.has-cream-background-color {
-		background-color: #FFE7BA;
-	}
-
-	.has-offwhite-color {
-		color: #F2F2F2;
-	}
-	.has-offwhite-background-color {
-		background-color: #F2F2F2;
-	}
 </style>
