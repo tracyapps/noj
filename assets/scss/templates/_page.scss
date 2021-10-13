@@ -1,6 +1,14 @@
 .page_featured_image_container {
 	min-height: 20vh;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 }
 
+.no-featured-image {
+	.page-title {
+		margin-top: 2em;
+	}
+}
 
+.page-title {
+	margin-top: 0;
+}

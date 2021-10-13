@@ -19,6 +19,9 @@
 	.main-two-columns {
 		display: flex;
 		justify-content: space-between;
+		width: 95%;
+		margin: 0 auto;
+		max-width: 1230px;
 
 		.main-column {
 			width: $golden-large;

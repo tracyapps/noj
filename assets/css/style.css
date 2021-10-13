@@ -209,7 +209,10 @@ h6 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1230px; }
     .main-two-columns .main-column {
       width: 63.8%;
       padding-right: 30px; }
@@ -457,7 +460,13 @@ footer.site-footer {
 
 .page_featured_image_container {
   min-height: 20vh;
-  margin-bottom: 4em; }
+  margin-bottom: 2em; }
+
+.no-featured-image .page-title {
+  margin-top: 2em; }
+
+.page-title {
+  margin-top: 0; }
 
 .homepage_hero-container {
   height: 85vh;

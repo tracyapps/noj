@@ -32,20 +32,21 @@
 	 * (This is all using ACF pro plugin to more easily handle custom site options)
 	 * */
 	// default theme filename, if none of the below conditions is met
-	$theme_choice = 'default-theme';
-	$type_choice = 'default-fonts';
+	$theme_colors = 'default';
+	$typography_choice = 'grunge';
 
-	$design_option_setting = get_field( 'color_theme_or_custom_choice', 'option' );
-	if( '' != $design_option_setting ) {
-		if( 'color_theme' == $design_option_setting ) :
-			$theme_choice = get_field( 'color_theme', 'option' );
-		elseif( 'custom' == $design_option_setting ) :
-			$theme_choice = 'custom';
-		endif;
+	$are_theme_colors_selected = get_field( 'color_theme', 'option' );
+	if( '' != $are_theme_colors_selected ) {
+		$theme_colors = get_field( 'color_theme', 'option' );
+	}
+
+	$are_typography_choices_selected = get_field( 'typography_theme', 'option' );
+	if( '' != $are_typography_choices_selected ) {
+		$typography_choice = get_field( 'typography_theme', 'option' );
 	}
 	// now we import that 'theme choice' variable file into the header
-	include( 'assets/css/variables/' . esc_html( $theme_choice ) . '.php' );
-	include( 'assets/css/variables/' . esc_html( $type_choice ) . '.php' );
+	include( 'assets/css/variables/theme-' . esc_html( $theme_colors ) . '.php' );
+	include( 'assets/css/variables/fonts-' . esc_html( $typography_choice ) . '.php' );
 	?>
 	<?php wp_head(); ?>
 </head>

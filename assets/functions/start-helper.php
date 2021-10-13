@@ -246,3 +246,12 @@ function start_display_child_pages_with_options() {
 	$output .= '</section>';
 	return $output;
 }
+
+function start_no_featured_image_body_class( $classes ) {
+	global $post;
+	if( !has_post_thumbnail( $post->ID ) ) {
+		$classes[] = "no-featured-image";
+	}
+	return $classes;
+}
+add_filter( 'body_class', 'start_no_featured_image_body_class' );
