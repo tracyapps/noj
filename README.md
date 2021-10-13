@@ -1,16 +1,16 @@
-# Dawn
-###### made from Start
+# Not Only Juice 
+###### made with love from Start
 
-### What is start?
-The start is a blank WordPress theme fully equipped with ACF site options & page sections to make things easy.
+### What is Start?
+Start is a custom starter WordPress theme fully equipped with ACF site options ~~& page sections~~ to make things easy. (Thanks gutenberg ( ͡❛ ෴ ͡❛))
 
-### What comes with start?
-start comes pre-baked with some cool things.The theme also includes:
+### What comes with Start?
+Start comes pre-baked with some cool things.The theme also includes:
 
 - Site options (ACF)
 - ~~Portfolio post type~~ (not needed)
 - ~~People post type~~ (not needed)
-- Landing page creator
+- ~~Landing page creator~~ (not needed)
 - Bower and Gulp Support
 - SVG optimizer / sprite injector
 - Browsersync
