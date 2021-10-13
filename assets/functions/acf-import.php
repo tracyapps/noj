@@ -13,7 +13,7 @@ $background_choices_available = array (
 $color_theme_list = array (
 	'default' 		=> 'Default',
 	'retrorocket' 	=> 'Retro Rocket',
-	'boldnblue'		=> 'Bold n Blue',
+	'spice-late'	=> 'Spice Late',
 	'youthful'		=> 'Youthful',
 );
 

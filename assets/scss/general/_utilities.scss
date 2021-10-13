@@ -23,51 +23,114 @@
 	overflow: hidden;
 }
 
+.has-dark-brown-color {
+	color: #312b28;
+}
+
+.has-dark-brown-background-color {
+	background-color: #312b28;
+}
+
+.has-light-brown-color {
+	color: #8B7355;
+}
+
+.has-light-brown-background-color {
+	background-color: #8B7355;
+}
+
+.has-peach-color {
+	color: #F4A460;
+}
+
+.has-peach-background-color {
+	background-color: #F4A460;
+}
+
+.has-beige-color {
+	color: #CDC9A5;
+}
+
+.has-beige-background-color {
+	background-color: #CDC9A5;
+}
+
+.has-cream-color {
+	color: #FFE7BA;
+}
+
+.has-cream-background-color {
+	background-color: #FFE7BA;
+}
+
+.has-offwhite-color {
+	color: #F2F2F2;
+}
+
+.has-offwhite-background-color {
+	background-color: #F2F2F2;
+}
 
 // ---------------- 02. Mixins
 
 // Style mixins
 
 
-
-
 // Responsive mixins
 // using breakpoint, but helping readability
 
 @mixin phone-only {
-	@include breakpoint( $phone ) { @content; }
+	@include breakpoint($phone) {
+		@content;
+	}
 }
 
 @mixin tablet-only {
-	@include breakpoint( $tablet ) { @content; }
+	@include breakpoint($tablet) {
+		@content;
+	}
 }
 
 @mixin tablet-portrait {
-	@include breakpoint( $tablet-portrait ) { @content; }
+	@include breakpoint($tablet-portrait) {
+		@content;
+	}
 }
 
 @mixin tablet-landscape {
-	@include breakpoint( $tablet-landscape ) { @content; }
+	@include breakpoint($tablet-landscape) {
+		@content;
+	}
 }
 
 @mixin desktop-only {
-	@include breakpoint( $desktop ) { @content; }
+	@include breakpoint($desktop) {
+		@content;
+	}
 }
 
 @mixin large-desktop {
-	@include breakpoint( $large-desktop ) { @content; }
+	@include breakpoint($large-desktop) {
+		@content;
+	}
 }
 
 @mixin tablet-down {
-	@include breakpoint( $tablet-portrait-down ) { @content; }
+	@include breakpoint($tablet-portrait-down) {
+		@content;
+	}
 }
 
 @mixin tablet-up {
-	@include breakpoint( $tablet-landscape-up ) { @content; }
+	@include breakpoint($tablet-landscape-up) {
+		@content;
+	}
 }
 
 @mixin phone-landscape {
-	@include breakpoint( $phone-landscape ) { @content; }
+	@include breakpoint($phone-landscape) {
+		@content;
+	}
 }
 
 

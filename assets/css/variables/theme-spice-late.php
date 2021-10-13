@@ -3,8 +3,7 @@
  * CSS variable import: default theme
  *
  */ ?>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,900;1,200;1,400;1,900&display=swap" rel="stylesheet">
+
 <style rel="stylesheet" type="text/css">
 	:root {
 		--header_background_color:		#455473;
@@ -41,4 +40,51 @@
 		--footer_link_hover_color:		#455473;
 	}
 
+	.has-dark-brown-color {
+		color: #312b28;
+	}
+
+	.has-dark-brown-background-color {
+		background-color: #312b28;
+	}
+
+	.has-light-brown-color {
+		color: #8B7355;
+	}
+
+	.has-light-brown-background-color {
+		background-color: #8B7355;
+	}
+
+	.has-peach-color {
+		color: #F4A460;
+	}
+
+	.has-peach-background-color {
+		background-color: #F4A460;
+	}
+
+	.has-beige-color {
+		color: #CDC9A5;
+	}
+
+	.has-beige-background-color {
+		background-color: #CDC9A5;
+	}
+
+	.has-cream-color {
+		color: #FFE7BA;
+	}
+
+	.has-cream-background-color {
+		background-color: #FFE7BA;
+	}
+
+	.has-offwhite-color {
+		color: #F2F2F2;
+	}
+
+	.has-offwhite-background-color {
+		background-color: #F2F2F2;
+	}
 </style>
