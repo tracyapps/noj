@@ -1,0 +1,237 @@
+//
+// Base
+//
+// What you will find here:
+// 01. General HTML element styles
+// 02. Global styles
+// 03. Typography
+
+
+// ---------------- 01. General HTML element styles
+
+html {
+	font-size: 62.5%;
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: var(--typography-base_font_size);
+	margin: 0;
+	font-family: var(--typography-body_text);
+	-webkit-tap-highlight-color: #ff0;
+
+	@include phone-only {
+		font-size: calc( var(--typography-body_text) * .9 );
+		line-height: 1.2;
+	}
+
+	@if $sticky-footer {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+	}
+}
+.highlight,
+::selection {
+	background: #ff0;
+}
+
+@if $sticky-footer {
+	div.site-content {
+		flex: 1;
+	}
+}
+
+a {
+	color: var(--text_link_color);
+	transition: all $button-transition-speed ease-in-out;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--text_link_hover_color);
+	}
+}
+
+blockquote {
+	position: relative;
+	padding: 1rem;
+
+	&:before{
+		content: "\201C";
+
+		font-family: Georgia, serif;
+		font-size: 90px;
+		font-weight: bold;
+		opacity: 0.2;
+
+		position: absolute;
+		left: -1.5rem;
+		top: -1.5rem;
+	}
+
+}
+
+// ---------------- 02. Global styles
+
+.hide-this {
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	position: absolute;
+
+	svg {
+		display: none;
+	}
+}
+
+
+
+.wp-block-button__link,
+.button,
+a.button,
+input[type="submit"],
+button {
+	background: var(--button_background_color);
+	padding: 0.5em 1.25em;
+	text-align: center;
+	text-decoration: none;
+	color: var(--button_text_color) !important;
+	display: inline-block;
+	transition: all $button-transition-speed ease-in-out;
+	border-radius: var(--border_radius);
+	font-weight: bold;
+	outline: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	border-width: 1px;
+	border-color: transparent;
+
+	&:hover,
+	&:focus,
+	&:visited:hover {
+		background: var(--button_hover_background_color);
+		color: var(--button_hover_text_color) !important;
+		box-shadow: 0 0 6px var(--button_hover_background_color);
+	}
+
+
+
+	&.full {
+		display: block;
+		text-align: center;
+	}
+
+
+	&.text_link {
+		background: none;
+		color: var(--text_link_color) !important;
+		text-decoration: underline;
+		padding: 0;
+		margin: 0;
+		font-weight: normal;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: var(--text_link_hover_color) !important;
+			background: none;
+			box-shadow: none;
+		}
+	}
+
+	.is-style-outline & {
+		//if needed
+
+		&:hover,
+		&:focus,
+		&:visited:hover {
+
+		}
+	}
+}
+
+
+
+.padding {
+	padding: 4rem;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+
+
+
+
+// ---------------- 03. Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.3em;
+	line-height: 1.1;
+	font-family: var(--typography-header_text);
+}
+
+h1 {
+	font-size: var(--typography-h1_size);
+	line-height: 1;
+
+	@include phone-only {
+		font-size: calc( var(--typography-h1_size) * .8 );
+	}
+}
+
+h2 {
+	font-size: var(--typography-h2_size);
+
+	@include phone-only {
+		font-size: calc( var(--typography-h2_size) * .8 );
+	}
+}
+
+h3 {
+	font-size: var(--typography-h3_size);
+
+	@include phone-only {
+		font-size: calc( var(--typography-h3_size) * .8 );
+	}
+}
+
+h4 {
+	font-size: var(--typography-h4_size);
+
+	@include phone-only {
+		font-size: calc( var(--typography-h4_size) * .8 );
+	}
+}
+
+h5 {
+	font-size: var(--typography-h5_size);
+
+	@include phone-only {
+		font-size: calc( var(--typography-h5_size) * .8 );
+	}
+}
+
+h6 {
+	font-size: var(--typography-h6_size);
+
+	@include phone-only {
+		font-size: calc( var(--typography-h6_size) * .8 );
+	}
+}
+
+
+
+
+
+
+// ---------------- 04. SVG backgrounds / patterns
