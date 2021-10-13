@@ -23,6 +23,9 @@ require_once( get_template_directory() . '/assets/functions/page-navi.php' );
 // Theme helper functions
 require_once( get_template_directory() . '/assets/functions/start-helper.php' );
 
+// Theme color palate options
+require_once( get_template_directory() . '/assets/functions/start-custom-color-themes.php' );
+
 // ACF.. first check to see if it's active
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
@@ -50,7 +53,7 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) {
 //require_once(get_template_directory().'/assets/functions/custom-post-type.php');
 
 // Adds site styles to the WordPress editor
-require_once(get_template_directory().'/assets/functions/editor-styles.php');
+// require_once(get_template_directory().'/assets/functions/editor-styles.php');
 
 // Customize the WordPress login menu
 //require_once(get_template_directory().'/assets/functions/login.php');
