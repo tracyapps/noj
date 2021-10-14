@@ -14,6 +14,8 @@ $color_theme_list = array (
 	'default' 		=> 'Default',
 	'spice-late'	=> 'Spice Late',
 	'spice-late-dark'	=> 'Spice Late - Dark',
+	'green-field'	=> 'Green Field',
+	'sale-at-the-gap' => 'Sale at the Gap',
 );
 
 $typography_theme_list = array (

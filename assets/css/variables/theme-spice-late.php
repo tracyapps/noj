@@ -11,8 +11,8 @@
 		--body--link_color: #5c1f2b;
 		--body--link_color_hover: #312b28;
 
-		--header_expanded--background_color:		rgba(205, 201, 165, 0.24);
-		--header_expanded--text_color:		#8B7355;
+		--header--background_color:		rgba(205, 201, 165, 0.24);
+		--header--text_color:		#8B7355;
 		--header_sticky--background_color: rgba(255, 255, 255, 0.89);
 		--header_sticky--text_color:		#8B7355;
 
