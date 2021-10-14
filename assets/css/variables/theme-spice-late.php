@@ -15,6 +15,7 @@
 		--header--text_color:		#8B7355;
 		--header_sticky--background_color: rgba(255, 255, 255, 0.89);
 		--header_sticky--text_color:		#8B7355;
+		--header_sticky--nav_text_color: #8B7355;
 
 		--nav_item--background_color: transparent;
 		--nav_item--text_color: #5c1f2b;
@@ -30,6 +31,9 @@
 		--footer--text_color:			#8B7355;
 		--footer--link_color: #5c1f2b;
 		--footer--link_color_hover:		#312b28;
+
+		--form--error_text: #992b00;
+		--form--valid_text: #4a6f17;
 	}
 
 </style>

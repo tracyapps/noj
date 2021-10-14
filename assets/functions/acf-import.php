@@ -11,11 +11,12 @@ $background_choices_available = array (
 );
 
 $color_theme_list = array (
-	'default' 		=> 'Default',
-	'spice-late'	=> 'Spice Late',
-	'spice-late-dark'	=> 'Spice Late - Dark',
+	'neutral-light' 		=> 'Neutral - Light',
+	'neutral-dark' 		=> 'Neutral - Dark',
 	'green-field'	=> 'Green Field',
 	'sale-at-the-gap' => 'Sale at the Gap',
+	'spice-late'	=> 'Spice Late',
+	'spice-late-dark'	=> 'Spice Late - Dark',
 );
 
 $typography_theme_list = array (

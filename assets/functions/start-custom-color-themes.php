@@ -149,3 +149,46 @@ if( 'sale-at-the-gap' == get_field( 'color_theme', 'option') ) :
 		),
 	) );
 endif;
+
+
+// NEUTRAL LIGHT/DARK
+if( 'neutral-light' == get_field( 'color_theme', 'option') ||
+	'neutral-dark' == get_field( 'color_theme', 'option')) :
+	add_theme_support( 'editor-color-palette', array(
+		array(
+			'name'  => __( 'Trendy grey', 'start' ),
+			'slug'  => 'trendy-grey',
+			'color' => '#666161',
+		),
+		array(
+			'name'  => __( 'Dusty grey', 'start' ),
+			'slug'  => 'dusty-grey',
+			'color'	=> '#ADA5A5',
+		),
+		array(
+			'name'  => __( 'Rusty maroon', 'start' ),
+			'slug'  => 'rusty-maroon',
+			'color'	=> '#322323',
+		),
+		array(
+			'name'  => __( 'Trendy maroon', 'start' ),
+			'slug'  => 'trendy-maroon',
+			'color'	=> '#744140',
+		),
+		array(
+			'name'  => __( 'Eggshell', 'start' ),
+			'slug'  => 'eggshell',
+			'color'	=> '#F3E9D7',
+		),
+		array(
+			'name'  => __( 'Subtle red', 'start' ),
+			'slug'  => 'subtle-red',
+			'color' => '#E6DADA',
+		),
+		array(
+			'name'  => __( 'White', 'start' ),
+			'slug'  => 'white',
+			'color' => '#fff',
+		),
+	) );
+endif;

@@ -95,14 +95,18 @@ blockquote {
 .button,
 a.button,
 input[type="submit"],
-button {
+button,
+a.wp-block-button__link {
 
 	transition: all $button-transition-speed ease-in-out;
+	background: var(--button--background_color);
+	color: var(--button--text_color);
 
 	&:hover,
 	&:focus,
 	&:visited:hover {
-
+		background: var(--button_hover--background_color);
+		color: var(--button_hover--text_color);
 	}
 
 
@@ -115,22 +119,25 @@ button {
 
 	&.text_link {
 		background: none;
+		color: var(--body--link_color);
 
 
 		&:hover,
 		&:focus,
 		&:active {
-
+			color: var(--body--link_color_hover);
 		}
 	}
 
 	.is-style-outline & {
-		//if needed
+		border-color: var(--button--background_color);
+		color: var(--button--background_color);
 
 		&:hover,
 		&:focus,
 		&:visited:hover {
-
+			border-color: var(--button_hover--background_color);
+			color: var(--button_hover--background_color);
 		}
 	}
 }
