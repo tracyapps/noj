@@ -32,7 +32,7 @@
 	 * (This is all using ACF pro plugin to more easily handle custom site options)
 	 * */
 	// default theme filename, if none of the below conditions is met
-	$theme_colors = 'default';
+	$theme_colors = 'neutral';
 	$typography_choice = 'grunge';
 
 	$are_theme_colors_selected = get_field( 'color_theme', 'option' );
