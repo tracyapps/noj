@@ -6,7 +6,7 @@
 
 <style rel="stylesheet" type="text/css">
 	:root {
-		--body--background_color:	#F2F0D5;
+		--body--background_color: #f6f6f3;
 		--body--text_color: #34322e;
 		--body--link_color: #668C4A;
 		--body--link_color_hover: #A6BF4B;
