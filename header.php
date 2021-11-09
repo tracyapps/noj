@@ -59,7 +59,7 @@
 			$logo_image = get_field( 'site_logo', 'option' );
 			$advanced_override = get_field( 'advanced_logo', 'option' );
 
-			if (in_array("advanced_yes", $advanced_override) ) :
+			if ( '' != $advanced_override && in_array("advanced_yes", $advanced_override) ) :
 				$svg_logo_code = get_field( 'svg_code_embed', 'option' );
 				printf(
 					'<a href="%s" title="%s home">%s</a>',
