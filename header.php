@@ -57,7 +57,17 @@
 		<div class="site-logo container">
 			<?php
 			$logo_image = get_field( 'site_logo', 'option' );
-			if ( '' != $logo_image ):
+			$advanced_override = get_field( 'advanced_logo', 'option' );
+
+			if (in_array("advanced_yes", $advanced_override) ) :
+				$svg_logo_code = get_field( 'svg_code_embed', 'option' );
+				printf(
+					'<a href="%s" title="%s home">%s</a>',
+					esc_url( home_url( '/' ) ),
+					get_bloginfo( 'name' ),
+					$svg_logo_code
+				);
+			elseif ( '' != $logo_image ):
 				printf(
 					'<a href="%s"><img src="%s" alt="%s logo" /></a>',
 					esc_url( home_url( '/' ) ),

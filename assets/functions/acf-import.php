@@ -95,6 +95,62 @@ if( function_exists('acf_add_local_field_group') ):
 				'max_size' => '',
 				'mime_types' => 'jpg, gif, svg, png',
 			),
+			// advanced settings - start
+			array(
+				'key' => 'field_618adc333ad4b',
+				'label' => 'Advanced',
+				'name' => 'advanced_logo',
+				'type' => 'checkbox',
+				'instructions' => 'Advanced logo settings',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '100',
+					'class' => '',
+					'id' => '',
+				),
+				'choices' => array(
+					'advanced_yes' => 'enable',
+				),
+				'allow_custom' => 0,
+				'default_value' => array(
+				),
+				'layout' => 'horizontal',
+				'toggle' => 0,
+				'return_format' => 'value',
+				'save_custom' => 0,
+			),
+			array(
+				'key' => 'field_618add103ad4c',
+				'label' => 'SVG code embed',
+				'name' => 'svg_code_embed',
+				'type' => 'acfe_code_editor',
+				'instructions' => 'If you want to override the logo image embed with actual embeded SVG code, this is where you put that. otherwise uncheck the option and it goes back to the default values above.',
+				'required' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_618adc333ad4b',
+							'operator' => '!=empty',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '100',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'mode' => 'text/html',
+				'lines' => 1,
+				'indent_unit' => 4,
+				'maxlength' => '',
+				'rows' => 12,
+				'max_rows' => '75',
+				'return_entities' => 0,
+			),
+			// advanced settings - end
 			array (
 				'key' => 'field_57f7c92167a96',
 				'label' => 'Default Featured Image',

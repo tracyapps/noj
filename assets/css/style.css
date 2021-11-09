@@ -553,6 +553,11 @@ input[aria-invalid="true"] {
       color: var(--header_expanded--text_color); }
     #full_page_sticky_container .site-header .site-logo {
       padding: 10px 20px; }
+      #full_page_sticky_container .site-header .site-logo img {
+        height: auto;
+        width: 80vw;
+        min-width: 200px;
+        max-width: 400px; }
       #full_page_sticky_container .site-header .site-logo h1 {
         margin: 0; }
         #full_page_sticky_container .site-header .site-logo h1 a {
