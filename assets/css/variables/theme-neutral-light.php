@@ -24,7 +24,7 @@
 		--nav_item_hover--background_color: #F3E9D7;
 		--nav_item_hover--text_color: #666161;
 
-		--page_header--page_title: #ada9a9;
+		--page_header--page_title: #171717;
 		--page_header--page_tagline: #fff;
 
 		--button--background_color: #744140;

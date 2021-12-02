@@ -385,7 +385,30 @@ h5,
 h6 {
   margin-bottom: 0.3em;
   line-height: 1.1;
-  font-family: var(--typography-header_text); }
+  font-family: var(--typography-header_text);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto; }
+
+p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto; }
+
+blockquote {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.page-content ul,
+.page-content ol {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto; }
 
 h1 {
   font-size: var(--typography-h1_size);
@@ -584,9 +607,13 @@ input[aria-invalid="true"] {
     position: absolute;
     min-height: 4em;
     width: 100%;
+    padding: 2px 2rem;
     transition: all 200ms ease-in-out;
     background: var(--header--background_color);
     color: var(--header--nav_text_color); }
+    @media (max-width: 600px) {
+      .site-header .site-header-content-container {
+        padding: 2px 1rem; } }
   .site-header.smaller .site-header-content-container {
     background-color: var(--smaller_header--background_color);
     color: var(--smaller_header--nav_text_color); }
@@ -820,23 +847,30 @@ footer.site-footer {
     position: relative;
     text-align: center; }
 
-.page_title {
-  font-size: 3.5em;
+.page_title,
+h1.page_title,
+h2.page_title {
+  font-size: var(--typography-h1_size);
   font-weight: 800;
-  margin: 0;
+  margin-top: 0;
   line-height: 1;
   text-align: center;
-  color: var(--page_header--page_title); }
-  .no-featured-image .page_title {
-    padding: 2em 10px 0.25em 10px; }
+  color: var(--page_header--page_title);
+  padding: 0.3em 10px 0.15em 10px; }
+  .no-featured-image .page_title, .no-featured-image
+  h1.page_title, .no-featured-image
+  h2.page_title {
+    padding-top: 2.2em; }
 
 .page_tagline {
   color: var(--page_header--page_tagline);
   font-size: 1.3em;
   font-weight: 500;
-  line-height: 1.5; }
-  .no-featured-image .page_tagline {
-    padding-bottom: 2em; }
+  line-height: 1.5;
+  padding-bottom: 2.75em; }
+
+.no-featured-image .page_heading_area {
+  padding-bottom: 2em; }
 
 .homepage_hero-container {
   height: 85vh;

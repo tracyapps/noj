@@ -15,9 +15,14 @@
 		position: absolute;
 		min-height: 4em;
 		width: 100%;
+		padding: 2px 2rem;
 		transition: all $button-transition-speed ease-in-out;
 		background: var(--header--background_color);
 		color: var(--header--nav_text_color);
+
+		@include phone-only {
+			padding: 2px 1rem;
+		}
 	}
 	&.smaller .site-header-content-container {
 		background-color: var(--smaller_header--background_color);

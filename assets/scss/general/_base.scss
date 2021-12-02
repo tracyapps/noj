@@ -167,6 +167,31 @@ h6 {
 	margin-bottom: 0.3em;
 	line-height: 1.1;
 	font-family: var(--typography-header_text);
+	padding-left: 2rem;
+	padding-right: 2rem;
+	max-width: $max-text-line-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	max-width: $max-text-line-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+blockquote{
+	max-width: $max-text-line-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-content ul,
+.page-content ol {
+	max-width: $max-text-line-width;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h1 {
