@@ -11,16 +11,21 @@
 		--body--link_color: #5c1f2b;
 		--body--link_color_hover: #312b28;
 
-		--header--background_color:		rgba(205, 201, 165, 0.24);
-		--header--text_color:		#8B7355;
-		--header_sticky--background_color: rgba(255, 255, 255, 0.89);
-		--header_sticky--text_color:		#8B7355;
-		--header_sticky--nav_text_color: #8B7355;
+		--header--background_color: transparent;
+		--header_dark--background_color: #5c1f2b;
+		--header--nav_text_color:		#fff;
+
+		--smaller_header--background_color: rgba(255, 255, 255, 0.97);
+		--smaller_header--nav_text_color: #744140;
 
 		--nav_item--background_color: transparent;
-		--nav_item--text_color: #5c1f2b;
+		--nav_item--text_color: currentColor;
+
 		--nav_item_hover--background_color: #8B7355;
 		--nav_item_hover--text_color: #fff;
+
+		--page_header--page_title: #8B7355;
+		--page_header--page_tagline: #fff;
 
 		--button--background_color: #5c1f2b;
 		--button--text_color: #fff;

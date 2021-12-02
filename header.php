@@ -89,18 +89,62 @@
 <div class="site-content">
 
 <?php
-if( !is_front_page() && has_post_thumbnail() && is_singular() ) :
-	$featuredimage = get_the_post_thumbnail_url( get_the_ID(), 'full' );
-	$alt_text = get_post_meta( $thumbnail->ID, '_wp_attachment_image_alt', true );
+if( !is_front_page() && !is_archive() ) :
+	global $post;
 
-	printf(
-		'
-			<div class="page_featured_image_container">
-				<img src="%s" class="page_featured_image" alt="%s" />
-			</div>
+	$page_for_posts = get_option( 'page_for_posts' ); // get the ide of the posts page for the header/title/featured image issue
+
+	$the_ID_of_this_page = $post->ID;
+	if( is_home() ) {
+		$the_ID_of_this_page = $page_for_posts;
+	}
+
+	$the_page_title = get_the_title( $post->ID );
+	if( true == get_field( 'override_page_title', $the_ID_of_this_page)) {
+		if( '' != get_field( 'custom_page_title', $the_ID_of_this_page ) ) :
+			$the_page_title = get_field( 'custom_page_title', $the_ID_of_this_page );
+		endif;
+	} else {
+		// crickets
+	}
+
+	$the_page_tagline = '';
+	if( '' != get_field( 'page_tagline', $the_ID_of_this_page ) ) {
+		$the_page_tagline = '<div class="page_tagline">' . get_field( 'page_tagline', $the_ID_of_this_page ) . '</div>';
+	}
+
+
+	// start conditional printing of the header, first if there is a featured image....
+	if( has_post_thumbnail() ) :
+		$featuredimage = get_the_post_thumbnail_url( get_the_ID(), 'full' );
+		$alt_text = get_post_meta( $thumbnail->ID, '_wp_attachment_image_alt', true );
+
+
+		printf(
+			'
+				<div class="page_featured_image_container">
+					<img src="%s" class="page_featured_image" alt="%s" />
+					<div class="page_heading_area">
+						<h1 class="page_title">%s</h1>
+						%s
+					</div>
+				</div>
+				',
+			esc_url( $featuredimage ),
+			esc_html( $alt_text ),
+			esc_html( $the_page_title ),
+			wp_kses_post( $the_page_tagline )
+		);
+	else : // or if there is no featured image then this happens
+		printf(
+			'
+				<div class="page_heading_area">
+					<h1 class="page_title">%s</h1>
+					%s
+				</div>
 			',
-		esc_url( $featuredimage ),
-		esc_html( $alt_text )
-	);
-
+			esc_html( $the_page_title ),
+			wp_kses_post( $the_page_tagline )
+		);
+	endif; // end if it has a featured image or not
 endif;

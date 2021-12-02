@@ -49,8 +49,102 @@ $where_sections_are_active = array (
 );
 
 
-//***************************************   SITE OPTIONS
+
 if( function_exists('acf_add_local_field_group') ):
+
+	//***************************************   Extra page heading fields
+	acf_add_local_field_group(array(
+		'key' => 'group_619da179c7533',
+		'title' => 'Page header',
+		'fields' => array(
+			array(
+				'key' => 'field_619da184999bb',
+				'label' => 'Override page title?',
+				'name' => 'override_page_title',
+				'type' => 'true_false',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'message' => 'yes',
+				'default_value' => 0,
+				'ui' => 0,
+				'ui_on_text' => '',
+				'ui_off_text' => '',
+			),
+			array(
+				'key' => 'field_619da20e999bc',
+				'label' => 'Custom page title',
+				'name' => 'custom_page_title',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_619da184999bb',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+			array(
+				'key' => 'field_619da23e999bd',
+				'label' => 'Page tagline',
+				'name' => 'page_tagline',
+				'type' => 'textarea',
+				'instructions' => 'Short block of text under the page title. Keep this short!',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => 4,
+				'new_lines' => 'wpautop',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'page',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'side',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+		'show_in_rest' => 0,
+	));
+
+
+	//***************************************   SITE OPTIONS
 	acf_add_local_field_group(array (
 		'key' => 'group_57f7c88c9aa18',
 		'title' => 'Site Options',

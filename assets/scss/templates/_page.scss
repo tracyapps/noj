@@ -1,14 +1,50 @@
 .page_featured_image_container {
-	min-height: 20vh;
+	min-height: 33vh;
 	margin-bottom: 2em;
-}
+	position: relative;
 
-.no-featured-image {
-	.page-title {
-		margin-top: 2em;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	.page_heading_area {
+		padding: 8em 2em 2em 2em;
+		z-index: 99;
+		position: relative;
+		text-align: center;
+
 	}
 }
 
-.page-title {
-	margin-top: 0;
+.page_title {
+	font-size: 3.5em;
+	font-weight: 800;
+	margin: 0;
+	line-height: 1;
+	text-align: center;
+	color: var(--page_header--page_title);
+
+	.no-featured-image & {
+		padding: 2em 10px 0.25em 10px;
+	}
 }
+
+.page_tagline {
+	color: var(--page_header--page_tagline);
+	font-size: 1.3em;
+	font-weight: 500;
+	line-height: 1.5;
+
+	.no-featured-image & {
+		padding-bottom: 2em;
+	}
+}
+

@@ -108,6 +108,23 @@ function start_get_the_archive_title( $span_class = '' ) {
 }
 
 /**
+ * add 'no-featured-image' class to page body classes
+ *
+ * @param $classes
+ * @return mixed
+ */
+
+function start_no_featured_image_body_class( $classes ) {
+	global $post;
+	if( !has_post_thumbnail( $post->ID ) && !is_front_page() ) {
+		$classes[] = "no-featured-image";
+	}
+	return $classes;
+}
+add_filter( 'body_class', 'start_no_featured_image_body_class' );
+
+
+/**
  * add excerpts to pages
  */
 function start_add_excerpts_to_pages() {
@@ -246,12 +263,3 @@ function start_display_child_pages_with_options() {
 	$output .= '</section>';
 	return $output;
 }
-
-function start_no_featured_image_body_class( $classes ) {
-	global $post;
-	if( !has_post_thumbnail( $post->ID ) ) {
-		$classes[] = "no-featured-image";
-	}
-	return $classes;
-}
-add_filter( 'body_class', 'start_no_featured_image_body_class' );

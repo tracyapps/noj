@@ -26,11 +26,12 @@
 		.main-column {
 			width: $golden-large;
 			padding-right: $gutter-width;
+			padding-top: 2rem;
 		}
 		.secondary-column {
 			width: ( 100% - $golden-large );
 			padding-left: $gutter-width;
+			padding-top: 3rem;
 		}
 	}
-
 }

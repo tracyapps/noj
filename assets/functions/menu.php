@@ -14,11 +14,11 @@ function start_top_nav() {
 	wp_nav_menu( array(
 		'container' => false,
 		// Remove nav container
-		'menu_class' => 'vertical medium-horizontal menu',
+		'menu_class' => 'vertical medium-horizontal menu links',
 		// Adding custom nav class
 		'items_wrap' => '<ul id="%1$s" class="%2$s"><li id="menu-home" class="menu-item"><a href="' . esc_url( home_url( '/' ) ) .'"><svg class="icon-home-dims">
 							<use xlink:href="#home"></use>
-						</svg></a></li>%3$s</ul>',
+						</svg></a></li>%3$s</ul><button>MENU</button><ul class="hidden-links hidden"></ul>',
 		'theme_location' => 'main-nav',
 		// Where it's located in the theme
 		'depth' => 5,
